@@ -255,5 +255,3 @@ while True:
     if(sair == "S"):
         break
     
-
-    
