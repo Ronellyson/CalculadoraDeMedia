@@ -95,44 +95,56 @@ for t in lista_de_turmas_selecionadas:
         
         while True:
             nota1 = input(f"\nDigite a nota 1: ")
-
-            try:
-                nota1 = Decimal(nota1)
-                nota1 = float(nota1)
-                break
-            except InvalidOperation:
-                print("Por Favor, digite um número:")
+           
+            if(float(nota1) <= 10):
+                try:
+                    nota1 = Decimal(nota1)
+                    nota1 = float(nota1)
+                    break
+                except InvalidOperation:
+                    print("Por Favor, digite um número:")
+            else:
+                print("Por Favor, digite uma nota menor ou igual a 10.0 :")         
        
         
         while True:
             nota2 = input(f"\nDigite a nota 2: ")
-
-            try:
-                nota2 = Decimal(nota2)
-                nota2 = float(nota2)
-                break
-            except InvalidOperation:
-                print("Por Favor, digite um número:")
+            
+            if(float(nota2) <= 10):
+                try:
+                    nota2 = Decimal(nota2)
+                    nota2 = float(nota2)
+                    break
+                except InvalidOperation:
+                    print("Por Favor, digite um número:")
+            else:
+                print("Por Favor, digite uma nota menor ou igual a 10.0 :")        
             
         while True:
             nota3 = input(f"\nDigite a nota 3: ")
-
-            try:
-                nota3 = Decimal(nota3)
-                nota3 = float(nota3)
-                break
-            except InvalidOperation:
-                print("Por Favor, digite um número:")
+            
+            if(float(nota3) <= 10):
+                try:
+                    nota3 = Decimal(nota3)
+                    nota3 = float(nota3)
+                    break
+                except InvalidOperation:
+                    print("Por Favor, digite um número:")
+            else:
+                print("Por Favor, digite uma nota menor ou igual a 10.0 :")            
         
         while True:
             nota4 = input(f"\nDigite a nota 4: ")
-
-            try:
-                nota4 = Decimal(nota4)
-                nota4 = float(nota4)
-                break
-            except InvalidOperation:
-                print("Por Favor, digite um número:")
+            
+            if(float(nota4) <= 10):
+                try:
+                    nota4 = Decimal(nota4)
+                    nota4 = float(nota4)
+                    break
+                except InvalidOperation:
+                    print("Por Favor, digite um número:")
+            else:
+                print("Por Favor, digite uma nota menor ou igual a 10.0 :")         
         
         media = (nota1+nota2+nota3+nota4) / 4
         
